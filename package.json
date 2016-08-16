@@ -1,0 +1,30 @@
+{
+  "name": "stocks",
+  "version": "0.0.1",
+  "description": "project for free code camp",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jesse989/stocks.git"
+  },
+  "author": "Jesse989",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jesse989/stocks/issues"
+  },
+  "homepage": "https://github.com/Jesse989/stocks#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "lodash": "^4.14.2",
+    "mongoose": "^4.5.9",
+    "morgan": "^1.7.0",
+    "nonce": "^1.0.4",
+    "querystring": "^0.2.0",
+    "request": "^2.74.0",
+    "socket.io": "^1.4.8"
+  }
+}
