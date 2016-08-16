@@ -5,12 +5,12 @@ $(function() {
     var chart;
     var socket = io();
     
-    $.getJSON('https://stocks-jesse989.c9users.io/api', function(data) {
+    $.getJSON('/api', function(data) {
         names = data;
 
         $.each(names, function(i, name) {
 
-            $.getJSON('https://stocks-jesse989.c9users.io/api/' + name, function(data) {
+            $.getJSON('/api/' + name, function(data) {
     
                 seriesOptions[i] = {
                     name: name,
@@ -74,7 +74,7 @@ $(function() {
             if (chart_series[index].name !== name) {
                 counter++;
                 if (counter + 1 === chart_series.length) {
-                    $.getJSON('https://stocks-jesse989.c9users.io/api/' + name, function(data) {
+                    $.getJSON('/api/' + name, function(data) {
                             return cb(data);
                     });
                 }
@@ -128,7 +128,7 @@ $(function() {
         });
 
         $.ajax({
-            url: 'https://stocks-jesse989.c9users.io/api',
+            url: '/api',
             type: 'POST',
             data: symbol_array,
             success: function(data) {
